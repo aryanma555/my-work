@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hare Rama Hare Krishna Travel | Smart Travel Services</title>
+    <meta
+      name="description"
+      content="Modern travel website for tours, cabs, bus booking, hotel reservations, and 24/7 support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="nav container">
+        <a href="#home" class="logo">HRHK <span>Travel</span></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero container">
+        <div>
+          <p class="badge">24×7 Travel Assistance</p>
+          <h1>High-tech, user-friendly travel booking experience</h1>
+          <p>
+            Plan your journey with one platform for bus booking, cab rental, holiday tours,
+            hotel reservations, and airport transfers.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#service-form">Book a Service</a>
+            <a class="btn btn-ghost" href="#contact">Talk to Support</a>
+          </div>
+        </div>
+
+        <form class="quick-form card" id="quickForm">
+          <h2>Quick Enquiry</h2>
+          <label>
+            Name
+            <input required type="text" name="name" placeholder="Your full name" />
+          </label>
+          <label>
+            Phone
+            <input required type="tel" name="phone" placeholder="+91 98XXXXXXXX" />
+          </label>
+          <label>
+            Service Type
+            <select required name="service">
+              <option value="">Select service</option>
+              <option>Bus Ticket Booking</option>
+              <option>Cab Rental</option>
+              <option>Holiday Package</option>
+              <option>Hotel Reservation</option>
+              <option>Airport Transfer</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+          <p class="form-msg" id="quickMsg" aria-live="polite"></p>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <section class="services container" id="services">
+        <h2>Connected Travel Services</h2>
+        <p class="section-text">
+          Based on your reference website structure, we designed a cleaner digital experience with
+          all major services connected in one flow.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Bus Ticket Booking</h3>
+            <p>Fast route search, seat preferences, and instant confirmation updates.</p>
+          </article>
+          <article class="card">
+            <h3>Cab & Tempo Traveller</h3>
+            <p>Choose from sedan, SUV, and group vehicles with transparent pricing.</p>
+          </article>
+          <article class="card">
+            <h3>Tour Packages</h3>
+            <p>Custom city tours, family trips, and pilgrimage travel plans.</p>
+          </article>
+          <article class="card">
+            <h3>Hotel Reservation</h3>
+            <p>Stay booking with preferred budget, amenities, and location filters.</p>
+          </article>
+          <article class="card">
+            <h3>Airport Transfer</h3>
+            <p>On-time pickup and drop with live trip support.</p>
+          </article>
+          <article class="card">
+            <h3>Corporate Travel Desk</h3>
+            <p>Invoice-friendly booking, trip tracking, and dedicated account support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="packages container" id="packages">
+        <h2>Popular Packages</h2>
+        <div class="grid">
+          <article class="card package">
+            <h3>Weekend Escape</h3>
+            <p>2N/3D curated getaway with transport + hotel.</p>
+          </article>
+          <article class="card package">
+            <h3>Family Comfort Tour</h3>
+            <p>5N/6D package with sightseeing and dedicated vehicle.</p>
+          </article>
+          <article class="card package">
+            <h3>Pilgrimage Circuit</h3>
+            <p>Temple and spiritual tour with guided routing support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="why container" id="why-us">
+        <h2>Why customers choose us</h2>
+        <ul>
+          <li>Real-time booking support and journey tracking</li>
+          <li>Clean, mobile-first experience</li>
+          <li>Quick enquiry and detailed service forms</li>
+          <li>One place for all travel services</li>
+        </ul>
+      </section>
+
+      <section class="form-section container" id="service-form">
+        <h2>Service Request Form</h2>
+        <form id="serviceForm" class="card">
+          <div class="row">
+            <label>Full Name <input required name="fullName" type="text" /></label>
+            <label>Email <input required name="email" type="email" /></label>
+          </div>
+          <div class="row">
+            <label>Mobile Number <input required name="mobile" type="tel" /></label>
+            <label>
+              Service Required
+              <select required name="serviceRequired">
+                <option value="">Select</option>
+                <option>Cab Service</option>
+                <option>Bus Booking</option>
+                <option>Holiday Package</option>
+                <option>Hotel Reservation</option>
+                <option>Airport Transfer</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label>From <input required name="from" type="text" /></label>
+            <label>To <input required name="to" type="text" /></label>
+          </div>
+          <div class="row">
+            <label>Travel Date <input required name="travelDate" type="date" /></label>
+            <label>No. of Travellers <input required name="travellers" type="number" min="1" /></label>
+          </div>
+          <label>Message <textarea name="message" rows="4" placeholder="Share your requirements"></textarea></label>
+          <button type="submit" class="btn btn-primary">Send Request</button>
+          <p class="form-msg" id="serviceMsg" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h3>Hare Rama Hare Krishna Travel</h3>
+          <p>Smart travel platform with complete transportation and tour solutions.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Phone: +91-90000 00000</p>
+          <p>Email: support@hrhktravel.com</p>
+        </div>
+        <div>
+          <h4>Address</h4>
+          <p>Main Road, City Center, India</p>
+          <p>Support Hours: 24×7</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
